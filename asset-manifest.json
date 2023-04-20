@@ -1,17 +1,15 @@
 {
   "files": {
     "main.css": "/CRA-Stories-Demo-App/static/css/main.073c9b0a.css",
-    "main.js": "/CRA-Stories-Demo-App/static/js/main.a814daed.js",
-    "static/js/361.b3df7413.chunk.js": "/CRA-Stories-Demo-App/static/js/361.b3df7413.chunk.js",
+    "main.js": "/CRA-Stories-Demo-App/static/js/main.40276c60.js",
     "static/js/787.5e3f2303.chunk.js": "/CRA-Stories-Demo-App/static/js/787.5e3f2303.chunk.js",
     "index.html": "/CRA-Stories-Demo-App/index.html",
     "main.073c9b0a.css.map": "/CRA-Stories-Demo-App/static/css/main.073c9b0a.css.map",
-    "main.a814daed.js.map": "/CRA-Stories-Demo-App/static/js/main.a814daed.js.map",
-    "361.b3df7413.chunk.js.map": "/CRA-Stories-Demo-App/static/js/361.b3df7413.chunk.js.map",
+    "main.40276c60.js.map": "/CRA-Stories-Demo-App/static/js/main.40276c60.js.map",
     "787.5e3f2303.chunk.js.map": "/CRA-Stories-Demo-App/static/js/787.5e3f2303.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a814daed.js"
+    "static/js/main.40276c60.js"
   ]
 }
