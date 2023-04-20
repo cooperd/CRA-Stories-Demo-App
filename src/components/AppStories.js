@@ -24,7 +24,7 @@ const stories2 = [
             background: "white",
           }}
         >
-          <h2>Just checking the see more feature.</h2>
+          <h2 style={{margin:0}} >Just checking the see more feature.</h2>
           <p style={{ textDecoration: "underline" }} onClick={close}>
             Go on, close this popup.
           </p>
@@ -58,7 +58,7 @@ const stories2 = [
                     background: "white",
                 }}
             >
-                <h2>Just checking the see more feature.</h2>
+                <h2 style={{margin:0}} >Just checking the see more feature.</h2>
                 <p style={{ textDecoration: "underline" }} onClick={close}>
                     Go on, close this popup.
                 </p>
@@ -75,7 +75,7 @@ const stories2 = [
             background: "white",
           }}
         >
-          <h2>Just checking the see more feature.</h2>
+          <h2 style={{margin:0}} >Just checking the see more feature.</h2>
           <p style={{ textDecoration: "underline" }} onClick={close}>
             Go on, close this popup.
           </p>
