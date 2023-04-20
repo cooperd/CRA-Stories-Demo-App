@@ -30,8 +30,8 @@ function App() {
                           : theme.palette.grey[800],
               }}
           >
-              <Container>
-        <AppBottomNavigation/>
+              <Container sx={{ px:0 }}>
+                <AppBottomNavigation/>
               </Container>
           </Box>
     </Box>

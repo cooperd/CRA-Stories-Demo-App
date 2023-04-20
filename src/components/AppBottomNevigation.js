@@ -14,7 +14,7 @@ export default function AppBottomNavigation() {
     };
 
     return (
-        <BottomNavigation value={value} onChange={handleChange}>
+        <BottomNavigation value={value} sx={{ px: 0 }} onChange={handleChange}>
             <BottomNavigationAction
                 label="Recents"
                 value="recents"
