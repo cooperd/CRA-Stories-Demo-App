@@ -7,17 +7,11 @@ import {Box, CssBaseline} from "@mui/material";
 
 function App() {
   return (
-      <Box sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              minHeight: '100vh',
-          }}
-        >
+      // eslint-disable-next-line
+      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', minHeight: '-moz-available', minHeight: '-webkit-fill-available', minHeight: 'fill-available'}}>
         <CssBaseline />
         <ResponsiveAppBar/>
-        <Container component="main" maxWidth="sm" sx={{ px: 0 }} >
           <Stories/>
-        </Container>
           <Box
               component="footer"
               sx={{

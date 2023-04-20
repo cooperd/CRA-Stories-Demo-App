@@ -1,10 +1,5 @@
 import React, {Suspense} from "react";
 const StoriesLazy = React.lazy(() => import("react-insta-stories"));
-const WithSeeMore = React.lazy(() =>
-    import("react-insta-stories").then((module) => ({
-        default: module.WithSeeMore,
-    }))
-);
 
 function Stories() {
     return (
@@ -25,7 +20,7 @@ function Stories() {
     )
 }
 
-const Story2 = ({ action, isPaused }) => {
+const Story2 = ({ isPaused }) => {
     return (
         <div style={{ ...contentStyle, background: "Aquamarine", color: "#333" }}>
             <h1>You get the control of the story.</h1>
@@ -48,7 +43,7 @@ const Story2 = ({ action, isPaused }) => {
 
 const stories2 = [
     {
-        content: ({ action, isPaused }) => {
+        content: () => {
             return (
                 <div style={contentStyle}>
                     <h1>The new version is here.</h1>
@@ -71,21 +66,19 @@ const stories2 = [
         },
     },
     {
-        content: ({ action, story }) => {
+        content: () => {
             return (
                 <Suspense>
-                    <WithSeeMore story={story} action={action}>
-                        <div style={{ background: "snow", padding: 20, height: "100%" }}>
-                            <h1 style={{ marginTop: "100%", marginBottom: 0 }}>🌝</h1>
-                            <h1 style={{ marginTop: 5 }}>
-                                We have our good old image and video stories, just the same.
-                            </h1>
-                        </div>
-                    </WithSeeMore>
+                    <div style={{ background: "snow", padding: 20, height: "100%" }}>
+                        <h1 style={{ marginTop: "100%", marginBottom: 0 }}>🌝</h1>
+                        <h1 style={{ marginTop: 5 }}>
+                            We have our good old image and video stories, just the same.
+                        </h1>
+                    </div>
                 </Suspense>
             );
         },
-        seeMoreCollapsed: ({ toggleMore, action }) => (
+        seeMoreCollapsed: ({ toggleMore }) => (
             <p style={customSeeMore} onClick={() => toggleMore(true)}>
                 A custom See More message →
             </p>
