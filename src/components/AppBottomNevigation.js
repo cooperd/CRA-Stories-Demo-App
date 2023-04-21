@@ -1,10 +1,10 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import FolderIcon from '@mui/icons-material/Folder';
-import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import SearchIcon from '../custom_icons/SearchIcon';
+import MeetIcon from '../custom_icons/MeetIcon';
+import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined';
+import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 
 export default function AppBottomNavigation() {
     const [value, setValue] = React.useState('recents');
@@ -15,22 +15,10 @@ export default function AppBottomNavigation() {
 
     return (
         <BottomNavigation value={value} sx={{ px: 0 }} onChange={handleChange}>
-            <BottomNavigationAction
-                label="Recents"
-                value="recents"
-                icon={<RestoreIcon />}
-            />
-            <BottomNavigationAction
-                label="Favorites"
-                value="favorites"
-                icon={<FavoriteIcon />}
-            />
-            <BottomNavigationAction
-                label="Nearby"
-                value="nearby"
-                icon={<LocationOnIcon />}
-            />
-            <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
+          <BottomNavigationAction icon={<SearchIcon />} />
+          <BottomNavigationAction icon={<MeetIcon />} />
+          <BottomNavigationAction icon={<TextsmsOutlinedIcon />} />
+          <BottomNavigationAction icon={<PermIdentityOutlinedIcon />} />
         </BottomNavigation>
     );
 }

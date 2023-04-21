@@ -1,5 +1,9 @@
 import React from "react";
 import Stories from "react-insta-stories"
+import image1 from "../statics/1.png"
+import image2 from "../statics/2.png"
+import image3 from "../statics/3.png"
+import image4 from "../statics/4.png"
 
 function AppStories() {
     return (
@@ -15,7 +19,10 @@ function AppStories() {
 
 const stories2 = [
     {
-      url: "https://picsum.photos/1080/1920?a",
+      url: image1,
+      seeMoreCollapsed: () => {
+        <span>See Profile</span>
+      },
       seeMore: ({ close }) => (
         <div
           style={{
@@ -32,7 +39,7 @@ const stories2 = [
       ),
     },
     {
-      url: "https://picsum.photos/1080/1920?b",
+      url: image2,
       seeMore: ({ close }) => (
         <div
           style={{
@@ -49,7 +56,7 @@ const stories2 = [
       ),
     },
     {
-        url: "https://picsum.photos/1080/1920?c",
+        url: image3,
         seeMore: ({ close }) => (
             <div
                 style={{
@@ -66,7 +73,7 @@ const stories2 = [
         ),
     },
     {
-      url: "https://picsum.photos/1080/1920?d",
+      url: image4,
       seeMore: ({ close }) => (
         <div
           style={{
